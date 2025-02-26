@@ -57,4 +57,4 @@ pip install pandas numpy seaborn matplotlib scikit-learn tqdm scipy
 
 ---
 ### Author
-This project is maintained as part of the `Data-analysis-projects` repository. Contributions and improvements are welcome!
+This project is maintained as part of the `Data-analysis-projects` repository. Contributions and improvements are welcome! 
