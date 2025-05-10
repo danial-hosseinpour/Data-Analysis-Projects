@@ -1,60 +1,44 @@
-# NIDDK Data Analysis
-
-## Overview
-The `NIDDK-Data-Analysis` project is part of the `Data-analysis-projects` repository. It focuses on analyzing the **National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) dataset**, which contains medical data used to predict diabetes outcomes.
-
-The project applies **exploratory data analysis (EDA), statistical tests, and machine learning models** to extract insights and improve predictive accuracy.
-
-## Dataset
-- **Source:** The dataset is fetched from IBM's cloud storage.
-- **Features:** Various medical measurements such as Blood Pressure, BMI, Age, and Pregnancies.
-- **Target Variable:** `Outcome` (1 = Diabetes, 0 = No Diabetes).
-
-## Requirements
-The analysis uses the following Python libraries:
-
-```bash
-pip install pandas numpy seaborn matplotlib scikit-learn tqdm scipy
-```
-
-## Workflow
-### 1. Data Loading & Exploration
-- Reads the dataset into a Pandas DataFrame.
-- Prints data shape and metadata.
-- Checks for missing values.
-- Generates summary statistics.
-
-### 2. Data Visualization
-- **Box plots & violin plots** for variable distribution across outcomes.
-- **Correlation heatmap** to identify relationships between features.
-- **Age distribution analysis** for diabetic patients.
-
-### 3. Statistical Analysis
-- **Pearson correlation coefficient** to measure relationships between variables.
-- **P-value analysis** for statistical significance.
-
-### 4. Machine Learning Models
-#### Linear Regression
-- Used to understand feature impact on the `Outcome` variable.
-
-#### Polynomial Regression
-- Explores higher-order relationships using different polynomial degrees.
-
-#### Ridge Regression
-- Applies L2 regularization to reduce overfitting.
-- **Hyperparameter tuning** with cross-validation.
-
-## Results & Insights
-- Identifies key risk factors for diabetes prediction.
-- Evaluates model performance using **R² score and Mean Squared Error (MSE)**.
-- Determines optimal Ridge Regression hyperparameters for improved generalization.
-
-
-## Future Improvements
-- Feature engineering to improve model performance.
-- Testing other machine learning algorithms (e.g., Random Forest, SVM).
-- Implementing fairness-aware models to reduce bias in predictions.
+### Interactive Diabetes Data Exploration Dashboard built with: 
+- **Python** for backend logic and data manipulation  
+- **Pandas** & **NumPy** for efficient data processing and statistical analysis  
+- **Matplotlib** & **Seaborn** for visualizations and trend analysis  
+- **Scikit-Learn** for predictive modeling (Linear Regression, Ridge)  
+- **PolynomialFeatures** & **StandardScaler** for feature transformations  
+- **GridSearchCV** for hyperparameter tuning  
 
 ---
-### Author
-This project is maintained as part of the `Data-analysis-projects` repository. Contributions and improvements are welcome! 
+
+# NIDDK Diabetes Data Analysis
+
+This project explores the **National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)** dataset, investigating factors that contribute to diabetes onset and applying machine learning models to predict diabetes outcomes.  
+
+## Key Insights: 
+- Glucose Levels Have the Strongest Correlation → Higher glucose readings significantly increase diabetes probability.  
+- Age Plays a Role in Diabetes Prediction → Older individuals tend to have a higher likelihood of diabetes.  
+- BMI & Diabetes Pedigree Function Influence Risk → Higher BMI and diabetes family history affect diabetes occurrence.  
+- Polynomial Regression Struggles with Overfitting → Linear models outperform high-degree polynomial models for diabetes classification.  
+- Ridge Regression Improves Stability → Regularization helps control feature importance and enhances prediction consistency.  
+
+---
+
+## Visualization Gallery 
+
+- Boxplot: Glucose Levels & Diabetes Outcome
+- Correlation Heatmap of Features
+- Age Distribution for Individuals with Diabetes
+- Performance of Different Regression Models
+
+---
+
+## Dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn tqdm
+```
+
+---
+
+## License 
+
+This project is licensed under the MIT License.
+
