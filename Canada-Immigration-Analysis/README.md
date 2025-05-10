@@ -1,39 +1,36 @@
-# Canada Immigration Analysis
-## Overview
-This project aims to analyze immigration data to Canada. The data is visualized using Python libraries such as Pandas, NumPy, Seaborn, and Matplotlib.
+### Interactive Canada Immigration Visualization built with:
+- **Pandas**: Data wrangling and manipulation
+- **NumPy**: Efficient numerical operations
+- **Matplotlib & Seaborn**: Static and statistical plotting
+- **Plotly**: Interactive visualizations
+  
+---
+# Canada Immigration Data Analysis (1980–2013)
+The objective of this project is to analyze **historical immigration data (1980–2013) to Canada from over 190 countries**, uncovering key trends, regional shifts, and data-driven insights. The findings aim to support policymakers, researchers, and the public in understanding how immigration patterns have evolved over time.
 
-## Dataset
-The dataset is sourced from [IBM Developer Skills Network](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/Canada.xlsx) and contains information on immigration to Canada by country of origin.
+---
 
-## Installation
-To run this project, you need to have Python installed along with the following libraries:
-`pandas, numpy, seaborn, matplotlib`
+## Key Insights
 
-## Output of treemap
-````python
-fig = px.treemap(df,
-                path= ["Continent", "Region"],
-                values= "Total",
-                title= "Immigrants from all over the world")
-fig.show()
-````
+✔️ Top 5 countries contributing to Canadian immigration over the decades  
+✔️ Immigration trends by continent and region  
+✔️ Detection of outlier years and pattern anomalies  
+✔️ Animated GIF of immigration growth for top countries  
+✔️ Comparative analysis using line plots, area charts, and heatmaps
 
-![Immigrant from all over the world](newplot1.png)
+---
 
-````python
-fig = px.treemap(df_asia,
-                 path=["Region", "index"],
-                 values="Total",
-                 title="Asian Immigrants")
+## Visualizations Included
 
-fig.show()
-````
-![Immigrant from Asia](newplot2.png)
-
-
-## Conclusion
-This project provides insights into immigration trends to Canada, revealing patterns and changes over time. The visualizations help in understanding the data better and can be used for further analysis.
+1. Bar chart of total immigrants by country
+2. Area chart: Top 5 countries over time
+3. Line plots: Asia, Europe, Africa, Latin America trends
+4. Pie chart: Proportional regional distribution
+5. Interactive plots using Plotly
+6. Tree map: Proportion of immigrants in different continents and regions
+![Animated Plot](Plots/treemap.gif)
 
 
-Feel free to modify and expand upon this draft to better suit your project's needs.
-Happy coding! 
+---
+## License
+This project is licensed under the MIT License.
